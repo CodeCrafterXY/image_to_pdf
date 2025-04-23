@@ -14,6 +14,10 @@
             "dest": "/public/styles.css"
         },
         {
+            "src": "/script.js",
+            "dest": "/public/script.js"
+        },
+        {
             "src": "/assets/icon.ico",
             "dest": "/public/assets/icon.ico"
         }
