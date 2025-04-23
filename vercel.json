@@ -25,7 +25,7 @@
     "crons": [
         {
             "path": "/api/cleanup.php",
-            "schedule": "*/1 * * * *"
+            "schedule": "0 0 * * *"
         }
     ]
 }
