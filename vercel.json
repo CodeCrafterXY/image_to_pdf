@@ -1,13 +1,17 @@
 {
     "functions": {
-        "api/*.php": {
-            "runtime": "vercel-php@0.6.2"
+        "api/.php": {
+        "runtime": "vercel-php@0.6.2"
         }
     },
     "routes": [
         {
-            "src": "/api/index.php",
-            "dest": "/api/index.php"
+            "src": "/",
+            "dest": "/public/index.php"
+        },
+        {
+            "src": "/api/(.)",
+            "dest": "/api/$1"
         },
         {
             "src": "/styles.css",
@@ -16,10 +20,6 @@
         {
             "src": "/assets/icon.ico",
             "dest": "/public/assets/icon.ico"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
         }
     ],
     "crons": [
